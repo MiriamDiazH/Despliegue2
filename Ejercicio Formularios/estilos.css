@@ -1,0 +1,49 @@
+body
+{
+    margin: 0px;
+    background-color: #FFFFFF;
+    
+}
+
+#contenedor
+{
+    margin: 0 auto;
+    width: 1024px;
+    background-color: #FFFFFF ;
+}
+
+#seccion
+{
+    clear:both;
+    margin-top: 1%;
+    width: 100%;
+    height: 250px;
+    background-color: #FFFFFF;
+}
+#Cabecera
+{
+    padding: 5px;
+    clear: left;
+    margin: 0px;
+    width: 99%;
+    height: 7em;
+    background-color: transparent;
+    display: table;
+}
+.h3
+{
+    float: left;
+    color: #87A000;
+    font-style: italic;
+}
+.errMsg { color: #C33; }
+
+.final
+{
+   
+    border-style: solid;
+}
+.onstate-direccion{display:block;}
+.offstate-direccion{display:none;}
+.onstate-acepta{display:block;}
+.offstate-acepta{display:none;}

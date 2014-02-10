@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN"
+    "http://www.w3.org/TR/html5/html5.dtd"
+    >
+<html lang="en">
+<head>
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" media="screen">
+    <script type="text/javascript" src="wforms.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="Cabecera">
+            <h3 class="h3">Creación de cuentas Bussiness</h3>
+        </div>
+        <div id="seccion">
+            
+            <p><b>Crea un inicio de sesion de cuenta Bussines</b></p>
+            <p>Rellena todos los campos</p>
+            <form>
+                <div>
+                    
+                    <label for="correo">Correo electrónico</label><br/>
+                    <input type="text" id="correo" class="validate-email required">
+                    <span id="correo-E"></span>
+                    
+                </div>
+                <div>
+                    
+                    <label for="contra">Contraseña</label><br/>
+                    <input type="password" id="contrasegna" class="required">
+                    <span id="contrasegna-E"></span>
+                    
+                </div>
+                <div>
+                    
+                    <label for="contra2">Vuelve a introducir la contraseña</label><br/>
+                    <input type="password" id="contrasegna2" class="required">
+                    <span id="contrasegna2-E"></span><span ></span>
+                    
+                </div>
+                <div>                    
+                    <label for="Pregunta">Pregunta de seguridad</label><br/>
+                    <select id="pregunta" class="required">
+                        <option value="">-Seleccione Una-</option>
+                        <option>¿Como se llamaba su primer colegio?</option>
+                        <option>¿Como se llamaba su primera mascota?</option>
+                        <option>¿Cual es el nombre del hospital en el que nacio?</option>
+                        <option>¿Cual es el apodo de su hijo mayor?</option>
+                        <option>¿Cual es el segundo nombre de su padre?</option>
+                        <option>¿A donde viajo en su luna de miel?</option>
+                        <option>¿Cual es el nombre del juguete favorito de su infancia?</option>
+                        <option>¿Como se llamaba su primer compañero de piso?</option>
+                        <option>¿Como es el apellido de solera de su abuela?</option>
+                    </select>
+                    <span id="pregunta-E"></span>  
+                </div>
+                <div>
+                    <label for="respuesta">Respuesta</label><br/>
+                    <input type="text" id="Respuesta" class="required">
+                    <span id="Respuesta-E"></span>                    
+                </div>
+                    <div>                    
+                    <label for="Pregunta2">Pregunta de seguridad 2</label><br/>
+                    <select id="pregunta2" class="required">
+                        <option value="">-Seleccione Una-</option>
+                        <option>¿Como se llamaba su primer colegio?</option>
+                        <option>¿Como se llamaba su primera mascota?</option>
+                        <option>¿Cual es el nombre del hospital en el que nacio?</option>
+                        <option>¿Cual es el apodo de su hijo mayor?</option>
+                        <option>¿Cual es el segundo nombre de su padre?</option>
+                        <option>¿A donde viajo en su luna de miel?</option>
+                        <option>¿Cual es el nombre del juguete favorito de su infancia?</option>
+                        <option>¿Como se llamaba su primer compañero de piso?</option>
+                        <option>¿Como es el apellido de solera de su abuela?</option>
+                    </select>
+                    <span id="pregunta2-E"></span>  
+                </div>
+                  <div>
+                    <label for="respuesta2">Respuesta</label><br/>
+                    <input type="text" id="Respuesta2" class="required">
+                    <span id="Respuesta2-E"></span>                    
+                </div>
+                  <br>
+                  <div class="final">
+                    <p>Comsulta, imprima o guarde los documentos que se muestran a continuación</p>
+                    <input type="checkbox" class="switch-acepta"><label>Al hacer clic en <b>Aceptar y continuar</b> por el presente documento</label>
+                        <ul>
+                            <li><p>Acepto y autorizo los términos de las Condiciones de Uso, las políticas que incorpora y la Política de Privacidad</p></li>
+                            <li><p>Especifico y expresamente autorizo el uso de métodos de seguridad de sitios web
+                            inlcuidas las cookies y a la transmisión segura de su información personal fuera de la Zona Económica Europea
+                            seguún la Política de Privacidad</p></li>
+                        </ul>
+                        <p><b>Condiciones de uso y Política de Privacidad</b></p>
+                        <p>Estos documentos están diseñados para informarle de sus derechos y obligaciones al usar el servicio.</p>
+                  </div>
+                  <div class="offstate-acepta">
+                    <input type="submit" value="Aceptar y Continuar" onclick="Aceptar()"/>  
+                  </div>
+                  
+            </form>
+        </div>
+    </div>
+</body>
+</html>

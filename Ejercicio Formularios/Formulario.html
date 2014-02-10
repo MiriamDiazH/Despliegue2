@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" media="screen">
+    <script type="text/javascript" src="wforms.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div id="Cabecera">
+            <h3 class="h3">Creación de cuentas Bussiness</h3>
+        </div>
+        <div id="seccion">
+            
+            <form>
+                <div>
+                    <label for="Tipo_Empresa">Tipo de Empresa</label><br/>
+                    <select id="TipoEmpresa" class="required">
+                        <option value="">-Tipo de Empresa-</option>
+                        <option>Particular</option>
+                        <option>Autónomo</option>
+                        <option>Otro tipo de sociedades</option>
+                        <option>Sociedad anónima</option>
+                        <option>Sociedad anónima (no cotiza en bolsa)</option>
+                        <option>Sociedad anónima (cotiza en bolsa)</option>
+                        <option>Organización sin ánimo de lucro</option>
+                        <option>Empresa/Organismo público</option>
+                    </select><span id="TipoEmpresa-E"></span>
+                </div>
+                <div>
+                    <label for="Nombre_empresa">Nombre de la empresa</label><br/>
+                    <input type="text" id="NombreEmpresa" class="validate-alpha required"><span id="NombreEmpresa-E"></span>
+                </div>
+                <div>
+                    <label for="Direccion">Dirección</label><br/>
+                    <input type="text" id="direccion" class="validate-alpha required"><span id="direccion-E"></span><br/>
+                    <label for="opcional">(Opcional)</label><br/>
+                    <input type="text" id="direccion2">
+                </div>
+                <div>
+                    <label for="Codigo_Postal">Código Postal</label><br/>
+                    <input type="text" id="CodigoPostal" class="validate-custom /[0-9]{5}/ required"/><span id="CodigoPostal-E"></span>
+                </div>
+                <div>
+                    <label for="Ciudad">Ciudad</label><br/>
+                    <input type="text" id="ciudad" class="validate-alpha required"><span id="ciudad-E"></span>
+                </div>
+                <div>
+                    <label for="Provincia">Provincia</label><br/>
+                    <select id="provincia" class="required">
+                        <option value="">-Provincia-</option>
+                        <option>Lugo</option>
+                        <option>Barcelona</option>
+                        <option>Madrid</option>
+                        <option>Badajoz</option>
+                        <option>S/C De Tenerife</option>
+                    </select><span id="provincia-E"></span>
+                </div>
+                <div>
+                    <p>País<br/>España</p>
+                </div>
+                <div>
+                    <label for="Categoria">Categoría</label><br/>
+                    <select id="categoria" class="required">
+                        <option value="">-Categoría-</option>
+                        <option>Viajes</option>
+                        <option>Electrónica y telecomunicaciones</option>
+                        <option>Entretenimiento e información</option>
+                        <option>Gobierno</option>
+                        <option>Informática, accesorios y servicios</option>
+                        <option>Juguetes y hobbies</option>
+                    </select><span id="categoria-E"></span>
+                </div>
+                <div>
+                    <label for="SubCategoria">Subcategoría</label><br/>
+                    <select id="subcategoria" class="required">
+                        <option value="">-Subcategoria-</option>
+                        <option>C1</option>
+                        <option>C2</option>
+                        <option>C3</option>
+                        <option>C4</option>
+                        <option>C5</option>
+                    </select><span id="subcategoria-E"></span>
+                </div>
+                <div>
+                    <label for="URL">URL de la empresa</label><br/>
+                    <input type="text" id="url" class="validate-custom /^http:/\/\/">
+                        <span id="url-E"></span>
+                </div>
+                <div>
+                    <p><b>Información de contacto del propietario de la empresa</b></p>
+                    <p>Introduzca la información del contacto del propietario de esta empresa o la persona de contacto principal para esta empresa</p>
+                </div>
+                <div>
+                    <label for="Nombre">Nombre</label><br/>
+                    <input type="text" id="nombre" class="required">
+                        <span id="nombre-E"></span>
+                </div>
+                 <div>
+                    <label for="Apellidos">Apellidos</label><br/>
+                    <input type="text" id="apellidos" class="required">
+                        <span id="apellidos-E"></span>
+                </div>
+                <div>
+                    <label for="Nacionalidad">Nacionalidad</label><br/>
+                    <select id="nacionalidad" class="required">
+                        <option value="">-Nacionalidad-</option>
+                        <option>España</option>
+                        <option>Francia</option>
+                        <option>Alemania</option>
+                        <option>Italia</option>
+                        <option>Portugal</option>
+                        <option>Noruega</option>
+                    </select><span id="nacionalidad-E"></span>
+                </div>
+                <div>
+                    <label for="Telefono_Trabajo">Teléfono del trabajo</label><br/>
+                    <input type="text" id="TelefonoTrabajo" class="validate-custom /\d{8,9}/ required"/>
+                    <span id="TelefonoTrabajo-E"></span>
+                    <label for="Extension">Extensión</label>
+                    <input type="text" id="extension" class="validate-custom /[0-9]{3}/"/>
+                    <span id="extension-E"></span>
+                </div>
+                <div>
+                    <label for="Telefono_Particular">Teléfono particular(opcional)</label><br/>
+                    <input type="text" id="TelefonoParticular">
+                </div>
+                <div>
+                    <label for="Telefono_Movil">Teléfono Móvil (opcional)</label><br/>
+                    <input typ="text" id="TelefonoMovil">
+                </div>
+                <div>
+                    <label for="Direccion_particular">Dirección Particular</label><br/>
+                </div>
+                 
+                 <input type="radio" name="direccion" id="direccion1" checked/><label for="direcc1">Igual que la dirección de empresa</label><br/>
+                 <input type="radio" name="direccion" id="direccion2" class="switch-direccion"/><label for="direcc2">Introducir otra dirección</label><br/>
+                 <div class="offstate-direccion">
+                    <input type="text">
+                 </div>
+                 <input type="submit" value="Continuar" onclick="{window.location.href="Empresa.html"}"/><br/>
+            </form>
+        </div>
+        
+        
+        
+    </div>
+</body>
+</html>
